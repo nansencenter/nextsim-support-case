@@ -63,6 +63,11 @@ This produces an executable called `/nextsim/model/bin/nextsim.exec`.
 Make a directory on `$USERWORK` to run the model and copy `slurm_experiment_apptainer/inputs` into it.
 
 Edit `inputs/slurm.sh` to replace `XXX` with suitable values.
+Edit `inputs/nextsim.cfg` to change model settings. For
+example change `mesh.filename` to use a different mesh. If
+the resolution increases you will need to reduce `simul.timestep`.
+
+Make some directories for the executable and the log outputs.
 ```
 mkdir bin logs
 ```
